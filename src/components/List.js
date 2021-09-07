@@ -6,7 +6,7 @@ export default function List({ cards, title, status, wipLimits }) {
     <div className='list'>
       <div>
         <div className='list__header'>
-          {title} { wipLimits !== 0 ? `(${wipLimits})` : '' }
+          {title} { wipLimits !== 0 && `(${wipLimits})` }
         </div>
         { status === 'TD' && <ActionButton /> }
         { cards.map(userStory => <Card key={userStory.id} />) }
