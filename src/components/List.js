@@ -7,7 +7,7 @@ export default function List({ cards, title, wipLimits }) {
         <div className='list__header'>
           {title} { wipLimits !== 0 ? `(${wipLimits})` : '' }
         </div>
-        { cards.map(userStory => <Card />) }
+        { cards.map(userStory => <Card key={userStory.id} />) }
       </div>
     </div>
   );
