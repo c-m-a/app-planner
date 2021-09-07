@@ -1,6 +1,10 @@
+import List from './List';
+
 export default function App() {
   return (
-    <div></div>
+    <div>
+      <List />
+    </div>
   );
 }
 
