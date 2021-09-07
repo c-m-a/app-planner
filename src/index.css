@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .actionButton {
+    @apply w-full;
+  }
+
   .card {
     @apply shadow my-1 p-1 rounded-md;
   }
