@@ -7,6 +7,7 @@ export default function Kanban({ lists }) {
           <List
             key={list.id}
             title={list.title}
+            status={list.status}
             cards={list.userStories}
             wipLimits={list.wipLimits}
           />
