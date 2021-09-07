@@ -1,7 +1,8 @@
 const initialState = [
   {
     id: 0,
-    status: 'Backlog',
+    status: 'TD',
+    title: 'TODO',
     type: 'info',
     wipLimits: 0,
     userStories: [
@@ -9,6 +10,7 @@ const initialState = [
         id: 0,
         title: 'User Story 1',
         description: 'example',
+        priority: 'L',
         hoursSpent: 0,
         totalEstimatedHours: 30
       }
@@ -16,14 +18,16 @@ const initialState = [
   },
   {
     id: 1,
-    status: 'Approved',
-    type: 'info',
-    wipLimits: 0,
+    status: 'IP',
+    title: 'In Progress',
+    type: 'process',
+    wipLimits: 10,
     userStories: [
       {
         id: 0,
         title: 'User Story 1',
         description: 'example',
+        priority: 'M',
         hoursSpent: 0,
         totalEstimatedHours: 30
       }
@@ -31,14 +35,16 @@ const initialState = [
   },
   {
     id: 2,
-    status: 'In Progress',
+    status: 'PRR',
+    title: 'Pull Request Review',
     type: 'process',
-    wipLimits: 10,
+    wipLimits: 5,
     userStories: [
       {
         id: 0,
         title: 'User Story 1',
         description: 'example',
+        priority: 'M',
         hoursSpent: 0,
         totalEstimatedHours: 30
       }
@@ -46,7 +52,8 @@ const initialState = [
   },
   {
     id: 3,
-    status: 'Ready For Testing',
+    status: 'RFT',
+    title: 'Ready For Testing',
     type: 'process',
     wipLimits: 10,
     userStories: [
@@ -54,6 +61,7 @@ const initialState = [
         id: 0,
         title: 'User Story 1',
         description: 'example',
+        priority: 'H',
         hoursSpent: 0,
         totalEstimatedHours: 30
       }
@@ -61,7 +69,8 @@ const initialState = [
   },
   {
     id: 4,
-    status: 'Completed',
+    status: 'C',
+    title: 'Completed',
     type: 'info',
     wipLimits: 0,
     userStories: [
@@ -69,6 +78,7 @@ const initialState = [
         id: 0,
         title: 'User Story 1',
         description: 'example',
+        priority: 'L',
         hoursSpent: 0,
         totalEstimatedHours: 30
       }
@@ -76,7 +86,8 @@ const initialState = [
   },
   {
     id: 5,
-    status: 'Rejected',
+    status: 'R',
+    title: 'Rejected',
     type: 'info',
     wipLimits: 0,
     userStories: [
@@ -84,6 +95,7 @@ const initialState = [
         id: 0,
         title: 'User Story 1',
         description: 'example',
+        priority: 'M',
         hoursSpent: 0,
         totalEstimatedHours: 30
       }
