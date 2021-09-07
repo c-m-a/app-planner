@@ -1,5 +1,14 @@
-export default function List() {
+import Card from './Card';
+
+export default function List({ cards, title, wipLimits }) {
   return (
-    <div>List</div>
+    <div className='list'>
+      <div>
+        <div className='list__header'>
+          {title} { wipLimits !== 0 ? `(${wipLimits})` : '' }
+        </div>
+        { cards.map(userStory => <Card />) }
+      </div>
+    </div>
   );
 }
