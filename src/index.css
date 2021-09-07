@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply shadow my-1 p-1 rounded-md;
+  }
+
+  .kanban {
+    @apply flex overflow-scroll h-full w-full;
+  }
+
+  .list {
+    @apply container w-1/6 bg-white shadow-md rounded-md p-2 mx-1;
+  }
+
+  .list__header {
+    @apply font-bold;
+  }
+}
