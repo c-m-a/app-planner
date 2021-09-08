@@ -1,3 +1,7 @@
+import { CONSTANTS } from '../actions';
+
+let listID = 6;
+
 const initialState = [
   {
     id: 0,
@@ -105,9 +109,18 @@ const initialState = [
 
 export default function listsReducer(state = initialState, action) {
   switch(action.type) {
+    case CONSTANTS.ADD_LIST:
+      const newList = {
+        id: listID++,
+        title: action.payload.title,
+        status: action.payload.status,
+        type: action.payload.type,
+        wipLimits: action.payload.wipLimits,
+        userStories: [],
+      };
+      return [...state, newList];
     default:
       return state;
   }
 }
-
 
