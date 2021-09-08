@@ -11,6 +11,30 @@
     @apply shadow my-1 p-1 rounded-md;
   }
 
+  .card__form {
+    @apply p-3;
+  }
+
+  .card__btn--primary {
+    @apply w-full;
+  }
+
+  .card__btn--default {
+    @apply w-full text-left;
+  }
+
+  .card__input {
+    @apply w-full mb-3;
+  }
+
+  .card__description {
+    @apply mb-2 w-full;
+  }
+
+  .card__select {
+    @apply w-full mb-3;
+  }
+
   .kanban {
     @apply flex overflow-scroll h-full w-full;
   }
